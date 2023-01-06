@@ -1,7 +1,8 @@
-import java.io.File
 // This is solution to Advent of Code Day 3: Rucksack Reorganization
 // You can find the challenge at https://adventofcode.com/2022/day/3
 // You can find the challenge input at https://adventofcode.com/2022/day/3/input
+
+import java.io.File
 
 fun main() {
     val inputArray = mutableListOf<String>()

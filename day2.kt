@@ -1,3 +1,7 @@
+// This is solution to Advent of Code Day 2: Rock Paper Scissors
+// You can find the challenge at https://adventofcode.com/2022/day/2
+// You can find the challenge input at https://adventofcode.com/2022/day/2/input
+
 import java.io.File;
 
 fun main() {
