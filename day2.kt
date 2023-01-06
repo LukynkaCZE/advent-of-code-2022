@@ -9,8 +9,8 @@ fun main() {
     // SOLUTION TO PART 1
     inputFile.forEach {
         val split = it.split(" ")
-        var elf = parseRPSType(split[0]);
-        var me = parseRPSType(split[1]);
+        val elf = parseRPSType(split[0]);
+        val me = parseRPSType(split[1]);
         overallScore += getRPSScore(me, runRPSMatch(elf, me))
     }
     println("[Solution to Part 1] My Overall Score: ${overallScore}")
@@ -18,9 +18,9 @@ fun main() {
     //SOLUTION TO PART 2
     inputFile.forEach {
         val split = it.split(" ")
-        var result = parseRPSResult(split[1])
-        var elf = parseRPSType(split[0])
-        var me = pickRPSTypeByResult(elf, result)
+        val result = parseRPSResult(split[1])
+        val elf = parseRPSType(split[0])
+        val me = pickRPSTypeByResult(elf, result)
         overallScore2 += getRPSScore(me, runRPSMatch(elf, me))
     }
     println("[Solution to Part 2] My Overall Score: ${overallScore2}")
