@@ -21,7 +21,7 @@ fun main() {
     println("[Solution to Part 1] Sum of priorities is: $totalPrioritySum")
 
     //PART 2
-    var badges = mutableListOf<Char>()
+    val badges = mutableListOf<Char>()
     var group = mutableListOf<String>()
     var badgePrioritySum = 0
 
@@ -29,7 +29,7 @@ fun main() {
         group.add(input)
         if(group.size == 3) {
             badges.add(getBadgeFromGroupOfRucksacks(group))
-            group = mutableListOf<String>()
+            group = mutableListOf()
         }
     }
     for(badge in badges) {
@@ -43,7 +43,7 @@ fun splitRucksackIntoCompartments(rucksack: String): MutableList<String> {
     val half1 = rucksack.substring(0, half)
     val half2 = rucksack.substring(half)
 
-    return mutableListOf<String>(half1, half2)
+    return mutableListOf(half1, half2)
 }
 
 fun getBadgeFromGroupOfRucksacks(rucksacks: MutableList<String>): Char {
@@ -77,9 +77,10 @@ fun findSameTypesInCompartments(compartments: MutableList<String>): MutableList<
 
 fun getPriorityFromItem(item: Char): Int {
     var subNumber = 96
-    if(item.isUpperCase()) {subNumber = 38}
+    if (item.isUpperCase()) {
+        subNumber = 38
+    }
 
     val ascii = item.code
-    val index = ascii - subNumber
-    return index
+    return ascii - subNumber
 }

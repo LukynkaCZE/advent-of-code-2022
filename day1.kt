@@ -2,7 +2,7 @@
 // You can find the challenge at https://adventofcode.com/2022/day/1
 // You can find the challenge input at https://adventofcode.com/2022/day/1/input
 
-import java.io.File;
+import java.io.File
 
 fun main() {
     val lineList = mutableListOf<String>()
@@ -16,8 +16,8 @@ fun main() {
     }
     elves.sortDescending()
     elves.forEach {println(it)}
-    var topThreeElvesTotal = elves[0] + elves[1] + elves[2] 
+    val topThreeElvesTotal = elves[0] + elves[1] + elves[2]
 
     println("[Solution to Part 1] The Elf carrying the most calories has total of ${elves[0]} calories!")
-    println("[Solution to Part 2] The top 3 Elves are carrying total of ${topThreeElvesTotal} calories!")
+    println("[Solution to Part 2] The top 3 Elves are carrying total of $topThreeElvesTotal calories!")
 }
