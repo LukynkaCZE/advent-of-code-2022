@@ -1,2 +1,5 @@
 *.jar
 *.txt
+.idea
+out/production/Advent of Code 2022
+Advent of Code 2022.iml
